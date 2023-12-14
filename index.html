@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Task 5 : Create a HTML document with a number displayed, and two buttons below the number that says " Increase Counter" and "Decrease Counter" , when the user clicks on the button, the number should be incremented by 1, and when the user clicks on decrease counter, the number should be decreased by 1.</h3>
+    <section>
+      <h1>Counter App</h1>
+      <div id="counter"  >0</div>
+      <div id="butt">
+        <button id="increase" onclick="increaseCounter()">Increase Counter</button>
+        <button onclick="DecreaseCounter()">Decrease counter</button>
+      </div>
+    </section>
+    
+    
+    <style>
+      body{
+        background: navy;
+      }
+      h1,h3{
+        color: whitesmoke;
+      }
+      h1{
+        margin-left: 100px;
+      }
+      section{
+        background-color: cornflowerblue;
+        border: 4px solid black;
+        width: 30%;
+        height: 300px;
+        margin-left: 30%;
+        padding-left: 30px;
+      }
+      #counter{
+        border: 4px solid black;
+        width: 7%;
+        margin-left: 140px;
+        height: auto;
+        background: whitesmoke;
+        margin-top: 50px;
+      }
+      #butt{
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+
+
+    </style>
+
+    <script>
+        
+        let counter = 0;
+    
+        function increaseCounter() {
+          counter++;
+          document.getElementById('counter').innerText = counter;
+        }
+        
+        function DecreaseCounter(){
+            counter--;
+            document.getElementById('counter').innerText = counter;
+        }
+
+      </script>
+
+</body>
+</html>
